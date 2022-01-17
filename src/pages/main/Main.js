@@ -13,6 +13,11 @@ class Main extends React.Component {
                         className="img"
                         src="../images/Main_Text_Logo.png"></Image>
                 </div>
+                <div className="background2" style={{height:"1000px", backgroundColor:"#162B7D", marginTop:"-15px"}}>
+                    <Image
+                        style={{display:"block",marginLeft:"auto",marginRight:"auto",width:"10%"}}
+                        src="../images/mouse.png"></Image>
+                </div>
             </div>
         )
     }
