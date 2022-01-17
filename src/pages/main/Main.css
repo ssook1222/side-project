@@ -1,0 +1,47 @@
+@media (min-width: 374px) {
+    .background{
+        width: 100%;
+        background-color: #162B7D;
+    }
+    .img{
+        display: block;
+        margin: -25px auto 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 359px) {
+    .background{
+        width: 100%;
+        background-color: #162B7D;
+    }
+    .img{
+        display: block;
+        margin: -25px auto 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 279px) {
+    .background{
+        width: 100%;
+        background-color: #162B7D;
+    }
+    .img{
+        display: block;
+        margin: -25px auto 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .background{
+        width: 100%;
+        background-color: #162B7D;
+    }
+    .img{
+        display: block;
+        margin: -25px auto 10px;
+        width: 70%;
+    }
+}
