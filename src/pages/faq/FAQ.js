@@ -2,7 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import Navbars from "../../navbar/Navbar";
 import Faqlist from './faqList';
-import { Button, Accordion } from 'react-bootstrap';
+//import faqSearch from './faqSearch';
+import { Button } from 'react-bootstrap';
 
 class FAQ extends React.Component {
     constructor(props) {
@@ -43,11 +44,14 @@ class FAQ extends React.Component {
                 <h1>
                     수강신청 FAQ
                 </h1>
-                
-                <Button id="수강정정" onClick = {this.HandleClick}>수강정정</Button>
-                <Button id="수강순위" onClick = {this.HandleClick}>수강순위</Button>
-                <Button id="이수학점" onClick = {this.HandleClick}>이수학점</Button>
-                <Button id="기타과목" onClick = {this.HandleClick}>기타과목</Button>
+
+
+                <div id = "btn">
+                    <Button id="수강정정" onClick = {this.HandleClick}>수강정정</Button>
+                    <Button id="수강순위" onClick = {this.HandleClick}>수강순위</Button>
+                    <Button id="이수학점" onClick = {this.HandleClick}>이수학점</Button>
+                    <Button id="기타과목" onClick = {this.HandleClick}>기타과목</Button>
+                </div>
 
                 <Faqlist list = {
                     this.state.faqInfo.filter(faq => (
