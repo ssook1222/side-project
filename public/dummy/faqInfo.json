@@ -1,0 +1,29 @@
+{
+    "faqInfo": [
+        {
+            "id": "수강정정", 
+            "question": "질문1",
+            "answer": "대답1"
+        },
+        {
+            "id": "수강순위", 
+            "question": "질문2",
+            "answer": "대답2"
+        },
+        {
+            "id": "이수학점", 
+            "question": "질문3",
+            "answer": "대답3"
+        },
+        {
+            "id": "기타과목", 
+            "question": "질문4",
+            "answer": "대답4"
+        },
+        {
+            "id": "기타과목", 
+            "question": "질문5",
+            "answer": "대답5"
+        }
+    ]
+}
