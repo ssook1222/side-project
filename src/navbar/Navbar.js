@@ -7,7 +7,7 @@ class Navbars extends React.Component {
             <div>
                 <Navbar id="navbar" className="background" style={{marginBottom:"20px"}} expand="lg">
                     <Container>
-                        <Navbar.Brand style={{color:"white"}} href="#home">
+                        <Navbar.Brand style={{color:"white"}} href="/">
                             <Image style={{width:"15%"}} src="/images/Main-Logo.png"></Image>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />

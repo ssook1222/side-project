@@ -13,10 +13,14 @@ class Main extends React.Component {
                         className="img"
                         src="../images/Main_Text_Logo.png"></Image>
                 </div>
-                <div className="background2" style={{height:"1000px", backgroundColor:"#162B7D", marginTop:"-15px"}}>
+                <div className="background2" style={{backgroundColor:"#162B7D", marginTop:"-15px"}}>
                     <Image
-                        style={{display:"block",marginLeft:"auto",marginRight:"auto",width:"10%"}}
+                        style={{display:"block",marginLeft:"auto",marginRight:"auto",marginBottom:"50px",width:"10%"}}
                         src="../images/mouse.png"></Image>
+                    <Image
+                        className="tree"
+                        style={{display:"block",marginLeft:"auto",marginRight:"auto"}}
+                        src="../images/main_tree.png"></Image>
                 </div>
             </div>
         )
