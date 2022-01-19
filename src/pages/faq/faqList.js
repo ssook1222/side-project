@@ -1,19 +1,33 @@
+import "./FAQ.css"
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 
 const Faqlist = (props) => {
     return (
-        <ul className='faq_list'>
-            {  
-                props.list.map((faq, index) => (
-                    <li key = {index}>
-                        <h1>{faq.question}</h1>
-                        <h2>{faq.answer}</h2>
-                    </li>
-                ))
-            }
-        </ul>
+        <div id='faq_list'>
+            {props.list.map((faq, index) => (
+                <Accordion defaultActiveKey={index} flush>
+                    <Accordion.Item eventKey={faq.question}>
+                        <ColoredLine color="#162B7D" />
+                        <Accordion.Header>{faq.question}</Accordion.Header>
+                        <Accordion.Body>{faq.answer}</Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            ))}
+            <ColoredLine color="#162B7D" />
+        </div>
     )
 }
+
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 3
+        }}
+    />
+);
+
 
 export default Faqlist;
