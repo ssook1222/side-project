@@ -1,22 +1,20 @@
-import "./faqList.css"
+import "./FAQ.css"
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
 
 const Faqlist = (props) => {
     return (
         <div id='faq_list'>
-            {  
-                props.list.map((faq, index) => (
-                    <Accordion defaultActiveKey={index} flush>
-                        <Accordion.Item eventKey = {faq.id}>
-                            <ColoredLine color = "#162B7D"/>
-                            <Accordion.Header>{faq.question}</Accordion.Header>
-                            <Accordion.Body>{faq.answer}</Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion>  
-                ))
-            }
-            <ColoredLine color = "#162B7D"/>
+            {props.list.map((faq, index) => (
+                <Accordion defaultActiveKey={index} flush>
+                    <Accordion.Item eventKey={faq.question}>
+                        <ColoredLine color="#162B7D" />
+                        <Accordion.Header>{faq.question}</Accordion.Header>
+                        <Accordion.Body>{faq.answer}</Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            ))}
+            <ColoredLine color="#162B7D" />
         </div>
     )
 }
@@ -30,5 +28,6 @@ const ColoredLine = ({ color }) => (
         }}
     />
 );
+
 
 export default Faqlist;

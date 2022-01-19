@@ -1,0 +1,54 @@
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#수강정정 {
+    background-color: #162B7D;
+    border: #162B7D;
+    height: 50px;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+#수강순위 {
+    background-color: #162B7D;
+    border: #162B7D;
+    height: 50px;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+#이수학점 {
+    background-color: #162B7D;
+    border: #162B7D;
+    height: 50px;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+#기타과목 {
+    background-color: #162B7D;
+    border: #162B7D;
+    height: 50px;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#faq_list {
+    margin-right: 4.5%;
+    margin-left: 4.5%;
+}
+
+#search {
+    text-align: left;
+    border: #162B7D ridge 5px;
+    margin: 3px;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 45px;
+}
