@@ -1,0 +1,13 @@
+.footer{
+    background-color: #e5e5e5;
+}
+.footer-text{
+    text-align: center;
+    margin-top: 10px;
+    color: #686767;
+}
+.mail{
+    text-decoration-line: none;
+    color: #686767;
+}
+/*추후 미디어쿼리 추가 예정*/

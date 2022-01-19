@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbars from "../../navbar/Navbar";
+import Footers from  "../../footer/FooterMain";
 import {Image} from "react-bootstrap";
 import "./Main.css";
 
@@ -22,6 +23,7 @@ class Main extends React.Component {
                         style={{display:"block",marginLeft:"auto",marginRight:"auto"}}
                         src="../images/main_tree.png"></Image>
                 </div>
+                <Footers></Footers>
             </div>
         )
     }
