@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./FAQ.css"
 import Navbars from "../../navbar/Navbar";
 import Faqlist from './faqList';
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 
 class FAQ extends React.Component {
     
@@ -51,9 +51,14 @@ class FAQ extends React.Component {
                     수강신청 FAQ
                 </h1>
 
-                <input id = "search" 
-		        placeholder="검색어를 입력하세요" 
-		        onChange={this.HandleChange}/>
+                <div className='search'>
+                    <input id = "searchBar" 
+                    placeholder="검색어를 입력하세요" 
+                    onChange={this.HandleChange}></input>
+
+                    <Image id = "searchBtn" src="/images/searchBtn.png" onClick={() => console.log("clicked")} />
+
+                </div>
 
                 <div className = "btn">
                     <Button id="수강정정" onClick = {this.HandleClick}>수강정정</Button>
