@@ -17,6 +17,7 @@ body {
     margin-right: 2%;
     margin-left: 2%;
 }
+
 #수강순위 {
     background-color: #162B7D;
     border: #162B7D;
@@ -25,6 +26,7 @@ body {
     margin-right: 2%;
     margin-left: 2%;
 }
+
 #이수학점 {
     background-color: #162B7D;
     border: #162B7D;
@@ -33,6 +35,7 @@ body {
     margin-right: 2%;
     margin-left: 2%;
 }
+
 #기타과목 {
     background-color: #162B7D;
     border: #162B7D;
@@ -56,10 +59,11 @@ body {
 #searchBar {
     text-align: left;
     border: #162B7D solid 5px;
-    width: 100%;
+    width: 100%; 
     margin: 30px 3px;
     height: 45px;
 }
+
 #searchBtn {
     width: 42px;
     height: 42px;
