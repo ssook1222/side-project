@@ -69,3 +69,14 @@ body {
     margin-bottom: 32px;
     margin-left: -48px;
 }
+
+.btn.check {
+    background-color: #162B7D;
+    border: #162B7D;
+}
+
+.btn.nonCheck{
+    background-color: white;
+    color: white;
+    border: white;
+}

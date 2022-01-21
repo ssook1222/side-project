@@ -12,7 +12,7 @@ const Faqlist = (props) => {
                         <Accordion.Header>
                             <div style={{fontWeight: 'bold'}}>{faq.question}</div>
                         </Accordion.Header>
-                        <Accordion.Body>{faq.answer}</Accordion.Body>
+                        <Accordion.Body><div style={{lineHeight: 1.8}}>{faq.answer}</div></Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
             ))}
