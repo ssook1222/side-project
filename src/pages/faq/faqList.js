@@ -9,8 +9,10 @@ const Faqlist = (props) => {
                 <Accordion defaultActiveKey={index} flush>
                     <Accordion.Item eventKey={faq.question}>
                         <ColoredLine color="#162B7D" />
-                        <Accordion.Header>{faq.question}</Accordion.Header>
-                        <Accordion.Body>{faq.answer}</Accordion.Body>
+                        <Accordion.Header>
+                            <div style={{fontWeight: 'bold'}}>{faq.question}</div>
+                        </Accordion.Header>
+                        <Accordion.Body><div style={{lineHeight: 1.8}}>{faq.answer}</div></Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
             ))}
