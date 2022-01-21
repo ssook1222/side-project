@@ -63,11 +63,10 @@ class FAQ extends React.Component {
                 </h1>
 
                 <div className='search'>
-                    <input id = "searchBar" 
-                    placeholder="검색어를 입력하세요" 
-                    value = {this.state.query}
-                    onChange={this.HandleChange}></input>
-
+                    <input id = "searchBar"
+                           placeholder="검색어를 입력하세요"
+                           value = {this.state.query}
+                           onChange={this.HandleChange}/>
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
 
                 </div>

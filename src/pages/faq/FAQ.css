@@ -56,10 +56,8 @@ body {
 #searchBar {
     text-align: left;
     border: #162B7D solid 5px;
-    margin: 3px;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 3px;
     height: 45px;
 }
 #searchBtn {
