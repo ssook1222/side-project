@@ -1,0 +1,30 @@
+.pageBtn {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnId {
+    width: 2rem;
+    margin: 0.2rem;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 1rem;
+}
+
+#btnId[disabled]{
+    color: grey;
+    cursor: revert;
+    transform: revert;
+}
+
+#btnId[aria-current] {
+    font-weight: bold;
+    cursor: revert;
+    transform: revert;
+}
