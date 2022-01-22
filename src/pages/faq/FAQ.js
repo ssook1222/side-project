@@ -71,12 +71,12 @@ class FAQ extends React.Component {
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
 
                 </div>
+                <div className = "btnFaq" style={{fontSize: "1.2vmax"}}>
+                    <Button className = "btn_type" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
+                    <Button className = "btn_type" id="btn2" onClick = {this.HandleClick}>수강순위</Button>
+                    <Button className = "btn_type" id="btn3" onClick = {this.HandleClick}>이수학점</Button>
+                    <Button className = "btn_type" id="btn4" onClick = {this.HandleClick}>기타과목</Button>
 
-                <div className = "btnFaq">
-                    <Button id="btn1" onClick = {this.HandleClick}>수강정정</Button>
-                    <Button id="btn2" onClick = {this.HandleClick}>수강순위</Button>
-                    <Button id="btn3" onClick = {this.HandleClick}>이수학점</Button>
-                    <Button id="btn4" onClick = {this.HandleClick}>기타과목</Button>
                 </div>
 
                 <Faqlist list = {
