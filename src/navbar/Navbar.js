@@ -5,7 +5,7 @@ class Navbars extends React.Component {
     render() {
         return(
             <div>
-                <Navbar id="navbar" className="background" style={{marginBottom:"20px", marginTop:"-50px"}} expand="lg">
+                <Navbar id="navbar" className="background" style={{marginBottom:"20px"}} expand="lg">
                     <Container>
                         <Navbar.Brand style={{color:"white"}} href="/">
                             <Image style={{width:"15%"}} src="/images/Main-Logo.png"></Image>

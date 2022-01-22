@@ -12,7 +12,7 @@ class FAQ extends React.Component {
         super(props);
         
         this.state = {
-            id: "수강정정",
+            id: "btn1",
             faqInfo: [],
             query: "", // #searchBar의 value값
             setQuery: "", // #searchBtn 누르면 현재 query값 넣음
@@ -67,16 +67,16 @@ class FAQ extends React.Component {
                     <input id = "searchBar"
                            placeholder="검색어를 입력하세요"
                            value = {this.state.query}
-                           onChange={this.HandleChange}/>ce
+                           onChange={this.HandleChange}/>
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
 
                 </div>
 
                 <div className = "btn">
-                    <Button id="수강정정" onClick = {this.HandleClick}>수강정정</Button>
-                    <Button id="수강순위" onClick = {this.HandleClick}>수강순위</Button>
-                    <Button id="이수학점" onClick = {this.HandleClick}>이수학점</Button>
-                    <Button id="기타과목" onClick = {this.HandleClick}>기타과목</Button>
+                    <Button id="btn1" onClick = {this.HandleClick}>수강정정</Button>
+                    <Button id="btn2" onClick = {this.HandleClick}>수강순위</Button>
+                    <Button id="btn3" onClick = {this.HandleClick}>이수학점</Button>
+                    <Button id="btn4" onClick = {this.HandleClick}>기타과목</Button>
                 </div>
 
                 <Faqlist list = {
@@ -88,6 +88,7 @@ class FAQ extends React.Component {
                     )) 
                 } />
 
+                <Footers />
             </div>
         )
     }
