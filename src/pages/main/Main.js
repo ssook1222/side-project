@@ -3,8 +3,6 @@ import Navbars from "../../navbar/Navbar";
 import Footers from  "../../footer/FooterMain";
 import {Image} from "react-bootstrap";
 import "./Main.css";
-import "./Quick";
-import Quick from "./Quick";
 
 class Main extends React.Component {
     render() {
@@ -24,7 +22,6 @@ class Main extends React.Component {
                         className="tree"
                         style={{display:"block",marginLeft:"auto",marginRight:"auto"}}
                         src="../images/main_tree.png"></Image>
-                    <Quick></Quick>
                 </div>
                 <Footers></Footers>
             </div>
