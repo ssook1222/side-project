@@ -63,6 +63,7 @@ class FAQ extends React.Component {
                 </h1>
 
                 <div className='search'>
+
                     <input id = "searchBar"
                            placeholder="검색어를 입력하세요"
                            value = {this.state.query}
@@ -71,7 +72,7 @@ class FAQ extends React.Component {
 
                 </div>
 
-                <div className = "btn">
+                <div className = "btnFaq">
                     <Button id="btn1" onClick = {this.HandleClick}>수강정정</Button>
                     <Button id="btn2" onClick = {this.HandleClick}>수강순위</Button>
                     <Button id="btn3" onClick = {this.HandleClick}>이수학점</Button>
