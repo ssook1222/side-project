@@ -38,9 +38,10 @@ class FAQ extends React.Component {
     HandleClick = (e) => {
         this.setState({id: e.target.id});
         // 버튼을 클릭하면 검색한 내용 초기화
-        this.setState({query: ""})
-        this.setState({setQuery: ""})
+        this.setState({query: ""});
+        this.setState({setQuery: ""});
     }
+
     
     HandleClick_ = () => {
         this.setState({setQuery: this.state.query});
@@ -53,6 +54,26 @@ class FAQ extends React.Component {
     }
 
     render() {
+        var btnClassN = document.getElementsByClassName("btn_type");
+
+        function clickedBtn(e) {
+            if (e.target.classList[1] === "clicked") {
+                e.target.classList.remove("clicked");
+            } else {
+                for (var i = 0; i < btnClassN.length; i++) {
+                    btnClassN[i].classList.remove("clicked");
+                }
+                e.target.classList.add("clicked");
+            }
+        }
+
+        function init() {
+            for (var i = 0; i < btnClassN.length; i++) {
+                btnClassN[i].addEventListener("click", clickedBtn);
+            }
+        }
+
+        init();
 
         return(
             <div>
@@ -63,16 +84,14 @@ class FAQ extends React.Component {
                 </h1>
 
                 <div className='search'>
-
                     <input id = "searchBar"
                            placeholder="검색어를 입력하세요"
                            value = {this.state.query}
                            onChange={this.HandleChange}/>
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
-
                 </div>
 
-                <div className = "btnFaq" style={{fontSize: "1.2vmax"}}>
+                <div className = "btnFaq">
                     <Button className = "btn_type" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
                     <Button className = "btn_type" id="btn2" onClick = {this.HandleClick}>수강순위</Button>
                     <Button className = "btn_type" id="btn3" onClick = {this.HandleClick}>이수학점</Button>
