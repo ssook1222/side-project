@@ -63,7 +63,6 @@ class FAQ extends React.Component {
                 </h1>
 
                 <div className='search'>
-
                     <input id = "searchBar"
                            placeholder="검색어를 입력하세요"
                            value = {this.state.query}
