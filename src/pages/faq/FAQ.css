@@ -1,6 +1,9 @@
-.btn {
+.btnFaq {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -8,40 +11,21 @@ body {
     vertical-align: bottom;
 }
 
-#btn1 {
-    background-color: #162B7D;
-    border: #162B7D;
+.btn_type {
+    background-color: #162B7D !important;
+    border: #162B7D !important;
     height: 50px;
     width: 20%;
     margin-right: 2%;
     margin-left: 2%;
+    font-size: 1.2vmax !important;
 }
 
-#btn2 {
-    background-color: #162B7D;
-    border: #162B7D;
-    height: 50px;
-    width: 20%;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
-#btn3 {
-    background-color: #162B7D;
-    border: #162B7D;
-    height: 50px;
-    width: 20%;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
-#btn4 {
-    background-color: #162B7D;
-    border: #162B7D;
-    height: 50px;
-    width: 20%;
-    margin-right: 2%;
-    margin-left: 2%;
+.btn_type.btn.btn-primary.clicked {
+    background-color: white !important;
+    color: #162B7D !important;
+    border: #162B7D ridge 2px !important;
+    font-weight: bold;
 }
 
 #faq_list {
@@ -70,15 +54,4 @@ body {
     margin-top: 30px;
     margin-bottom: 32px;
     margin-left: -48px;
-}
-
-.btn.check {
-    background-color: #162B7D;
-    border: #162B7D;
-}
-
-.btn.nonCheck{
-    background-color: white;
-    color: white;
-    border: white;
 }
