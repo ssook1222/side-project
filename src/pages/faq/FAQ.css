@@ -37,13 +37,13 @@ body {
 .search {
     margin-left: 15%;
     margin-right: 15%;
-    
+
 }
 
 #searchBar {
     text-align: left;
     border: #162B7D solid 5px;
-    width: 100%; 
+    width: 100%;
     margin: 30px 3px;
     height: 45px;
 }
