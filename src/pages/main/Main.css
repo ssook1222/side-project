@@ -1,10 +1,11 @@
-@media (min-width: 374px) {
+@media (min-width: 374px) and (max-width: 416px){
     .background{
         width: 100%;
         background-color: #162B7D;
     }
     .background2{
-        height: 500px;
+        margin-top: -15px;
+        height: 2000px;
         background-color: #162B7D;
     }
     .img{
@@ -17,7 +18,7 @@
     }
 }
 
-@media (min-width: 359px) {
+@media (min-width: 359px) and (max-width: 373px){
     .background{
         width: 100%;
         background-color: #162B7D;
@@ -28,7 +29,8 @@
         width: 100%;
     }
     .background2{
-        height: 500px;
+        margin-top: -15px;
+        height: 1900px;
         background-color: #162B7D;
     }
     .tree{
@@ -36,7 +38,7 @@
     }
 }
 
-@media (min-width: 279px) {
+@media (min-width: 279px) and (max-width: 358px){
     .background{
         width: 100%;
         background-color: #162B7D;
@@ -47,7 +49,8 @@
         width: 100%;
     }
     .background2{
-        height: 500px;
+        margin-top: -15px;
+        height: 1850px;
         background-color: #162B7D;
     }
     .tree{
@@ -55,7 +58,7 @@
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 416px){
     .background{
         width: 100%;
         background-color: #162B7D;
@@ -66,7 +69,8 @@
         width: 70%;
     }
     .background2{
-        height: 600px;
+        margin-top: -15px;
+        height: 2000px;
         background-color: #162B7D;
     }
     .tree{
@@ -74,7 +78,7 @@
     }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 500px) and (max-width: 700px){
     .background{
         width: 100%;
         background-color: #162B7D;
@@ -85,7 +89,8 @@
         width: 70%;
     }
     .background2{
-        height: 1200px;
+        margin-top: -15px;
+        height: 2200px;
         background-color: #162B7D;
     }
     .tree{
@@ -93,7 +98,7 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 700px) and (max-width: 1270px)  {
     .background{
         width: 100%;
         background-color: #162B7D;
@@ -104,13 +109,55 @@
         width: 70%;
     }
     .background2{
-        height: 1500px;
+        margin-top: -15px;
+        height: 3000px;
         background-color: #162B7D;
     }
     .tree{
         width: 85%;
     }
 }
+
+@media (min-width: 1020px) and (max-width: 1260px) {
+    .background{
+        width: 100%;
+        background-color: #162B7D;
+    }
+    .img{
+        display: block;
+        margin: -25px auto 10px;
+        width: 70%;
+    }
+    .background2{
+        margin-top: -15px;
+        height: 3300px;
+        background-color: #162B7D;
+    }
+    .tree{
+        width: 85%;
+    }
+}
+
+@media (min-width: 1279px) and (max-width: 1290px) {
+    .background{
+        width: 100%;
+        background-color: #162B7D;
+    }
+    .img{
+        display: block;
+        margin: -25px auto 10px;
+        width: 70%;
+    }
+    .background2{
+        margin-top: -15px;
+        height: 3800px;
+        background-color: #162B7D;
+    }
+    .tree{
+        width: 85%;
+    }
+}
+
 @media (min-width: 1300px) {
     .background {
         width: 100%;
@@ -124,6 +171,7 @@
     }
 
     .background2 {
+        margin-top: -15px;
         height: 3200px;
         background-color: #162B7D;
     }

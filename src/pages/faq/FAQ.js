@@ -90,7 +90,7 @@ class FAQ extends React.Component {
                            onChange={this.HandleChange}/>
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
                 </div>
-
+                
                 <div className = "btnFaq" style={{fontSize: "1.2vmax"}}>
 
                     <Button className = "btn_type" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
