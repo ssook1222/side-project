@@ -16,7 +16,7 @@ class Quick extends React.Component {
                             수강신청 일정과 신청 시 주의사항을 확인하실 수 있습니다.
                         </p>
                         <br/>
-                        <Button className="btn-light move">더 알아보기</Button>
+                        <Button className="btn-light move" href="/Warning">더 알아보기</Button>
                     </h1>
 
                 </div>
@@ -57,7 +57,9 @@ class Quick extends React.Component {
                             수강신청 관련 궁금한 것들을 확인하실 수 있습니다.
                         </p>
                         <br/>
-                        <Button className="btn-light move">더 알아보기</Button>
+                        <Button className="btn-light move" href="/FAQ">더 알아보기(FAQ)</Button>
+                        <br/><br/>
+                        <Button className="btn-light move">더 알아보기(Q&A)</Button>
                     </h1>
                 </div>
             </div>
