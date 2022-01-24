@@ -5,7 +5,7 @@ import {Table} from "react-bootstrap";
 class Tables extends React.Component {
     render() {
         return(
-            <Table className="tables" striped bordered hover>
+            <Table className="tables" style={{width:"80%"}} striped bordered hover>
                 <thead>
                 <tr>
                     <th>구분</th>
@@ -55,21 +55,18 @@ class Tables extends React.Component {
                     <td>전체 재학생</td>
                     <td>2월 24일 오전 8시 ~ 오후 5시</td>
                     <td>학교홈페이지 > Quick Link > 수강신청 [선착순]</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>개강 후 수강정정</td>
                     <td>전체 재학생</td>
                     <td>3월 2일 오전 8시 ~ 3월 8일 24시(자정)</td>
                     <td>학교홈페이지 > Quick Link > 수강신청 [선착순]</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>수강포기(4주차)</td>
                     <td>수강 포기 희망자</td>
                     <td>3월 23일 오전 10시 ~ 3월 29일 오후 24시(자정)</td>
                     <td>숙명포털시스템 > 학사 > 수강신청 > 수강조회</td>
-                    <td></td>
                 </tr>
                 </tbody>
             </Table>
