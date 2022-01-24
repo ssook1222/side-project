@@ -1,0 +1,10 @@
+.text{
+    font-size: small;
+}
+
+.tables{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
