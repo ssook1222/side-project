@@ -59,7 +59,7 @@ class Quick extends React.Component {
                         <br/>
                         <Button className="btn-light move" href="/FAQ">더 알아보기(FAQ)</Button>
                         <br/><br/>
-                        <Button className="btn-light move">더 알아보기(Q&A)</Button>
+                        <Button className="btn-light move" href="/QnA">더 알아보기(Q&A)</Button>
                     </h1>
                 </div>
             </div>
