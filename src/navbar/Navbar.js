@@ -20,7 +20,7 @@ class Navbars extends React.Component {
                                     <NavDropdown.Item style={{color:"#162B7D"}} href="#action/3.2">수강신청 설명</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link style={{color:"white", marginRight:"10px",fontSize:"20px"}} href="/FAQ">수강신청 FAQ</Nav.Link>
-                                <Nav.Link style={{color:"white", marginRight:"10px",fontSize:"20px"}} href="#link">수강신청 Q&A</Nav.Link>
+                                <Nav.Link style={{color:"white", marginRight:"10px",fontSize:"20px"}} href="/QnA">수강신청 Q&A</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

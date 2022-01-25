@@ -1,8 +1,7 @@
 import React from 'react';
+import Boards from "./QnABoard";
 import Navbars from "../../navbar/Navbar";
 import Footers from  "../../footer/FooterMain";
-import Schedule from "./Schedule";
-import Information from "./Information";
 import {Image} from "react-bootstrap";
 
 class WarningMain extends React.Component {
@@ -13,10 +12,10 @@ class WarningMain extends React.Component {
                 <div className="background">
                     <Image
                         className="img"
-                        src="../images/Schedule.png"></Image>
+                        src="../images/QnA.png"></Image>
                 </div>
-                <Schedule></Schedule>
-                <Information></Information>
+                <h2 style={{color:"#162B7D", marginLeft:"50px",marginBottom:"50px",marginTop:"50px"}}>QnA</h2>
+                <Boards></Boards>
                 <Footers></Footers>
             </div>
         )
