@@ -98,6 +98,7 @@ class FAQ extends React.Component {
                 
                 <div className = "btnFaq">
 
+
                     <Button className = "btn_type clicked" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
                     <Button className = "btn_type" id="btn2" onClick = {this.HandleClick}>수강순위</Button>
                     <Button className = "btn_type" id="btn3" onClick = {this.HandleClick}>이수학점</Button>
