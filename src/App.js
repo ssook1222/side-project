@@ -4,6 +4,7 @@ import FAQ from "./pages/faq/FAQ";
 import QNA from "./pages/qna/QnAMain"
 import Warning from "./pages/warning/WarningMain";
 import InfoKey from "./pages/infoKey/InfoKey";
+import InfoTuto from "./pages/infoTuto/InfoTuto";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 
@@ -17,6 +18,7 @@ function App() {
                   <Route path="/Warning" element={<Warning/>}></Route>
                   <Route path="/QnA" element={<QNA/>}></Route>
                   <Route path="/infoKey" element={<InfoKey />}></Route>
+                  <Route path="/infoTuto" element={<InfoTuto />}></Route>
               </Route>
           </Routes>
       </BrowserRouter>
