@@ -55,3 +55,15 @@ body {
     margin-bottom: 32px;
     margin-left: -48px;
 }
+
+#textFAQ {
+    background-color: #162B7D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5vmax; 
+    margin-top: -5%;
+    padding-bottom: 5%;
+}
