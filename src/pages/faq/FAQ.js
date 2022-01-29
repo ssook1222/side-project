@@ -41,7 +41,6 @@ class FAQ extends React.Component {
         this.setState({query: ""});
         this.setState({setQuery: ""});
     }
-
     
     HandleClick_ = () => {
         this.setState({setQuery: this.state.query});
@@ -66,7 +65,7 @@ class FAQ extends React.Component {
                 e.target.classList.add("clicked");
             }
         }
-
+        
         function init() {
             for (var i = 0; i < btnClassN.length; i++) {
                 btnClassN[i].addEventListener("click", clickedBtn);
@@ -79,9 +78,15 @@ class FAQ extends React.Component {
             <div>
                 <Navbars></Navbars>
 
-                <h1>
-                    수강신청 FAQ
-                </h1>
+                <div className="background">
+                    <Image
+                        className="img"
+                        src="../images/FAQ_Text_Logo.png"/>
+                </div>
+
+                <div id="textFAQ">
+                    수강신청 관련 자주 묻는 질문을 <br />모아둔 페이지입니다.
+                </div>
 
                 <div className='search'>
                     <input id = "searchBar"
@@ -91,9 +96,9 @@ class FAQ extends React.Component {
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
                 </div>
                 
-                <div className = "btnFaq" style={{fontSize: "1.2vmax"}}>
+                <div className = "btnFaq">
 
-                    <Button className = "btn_type" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
+                    <Button className = "btn_type clicked" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
                     <Button className = "btn_type" id="btn2" onClick = {this.HandleClick}>수강순위</Button>
                     <Button className = "btn_type" id="btn3" onClick = {this.HandleClick}>이수학점</Button>
                     <Button className = "btn_type" id="btn4" onClick = {this.HandleClick}>기타과목</Button>

@@ -15,9 +15,9 @@ class Navbars extends React.Component {
                             <Nav className="ms-auto justify-content-end">
                                 <Nav.Link style={{color:"white", marginRight:"10px",fontSize:"20px"}} href="/Warning">수강신청 주의사항</Nav.Link>
                                 <NavDropdown id="drop-down" style={{color:"white",marginRight:"10px",fontSize:"20px"}} title="수강신청 설명">
-                                    <NavDropdown.Item style={{color:"#162B7D"}} href="#action/3.1">수강신청 튜토리얼</NavDropdown.Item>
+                                    <NavDropdown.Item style={{color:"#162B7D"}} href="/InfoTuto">수강신청 튜토리얼</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item style={{color:"#162B7D"}} href="#action/3.2">수강신청 설명</NavDropdown.Item>
+                                    <NavDropdown.Item style={{color:"#162B7D"}} href="/InfoKey">수강신청 설명</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link style={{color:"white", marginRight:"10px",fontSize:"20px"}} href="/FAQ">수강신청 FAQ</Nav.Link>
                                 <Nav.Link style={{color:"white", marginRight:"10px",fontSize:"20px"}} href="/QnA">수강신청 Q&A</Nav.Link>
