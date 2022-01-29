@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import { Image } from 'react-bootstrap';
 import Navbars from '../../navbar/Navbar';
 import Footers from '../../footer/FooterMain'
