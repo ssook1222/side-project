@@ -1,29 +1,27 @@
-import { Button } from 'react-bootstrap';
+import {Pagination} from "react-bootstrap";
+import React from 'react';
+import {render} from "@testing-library/react";
 
-function Pag({ total, limit, page, setPage }) {
-    const numPages = Math.ceil(total / limit);
-
-    return (
-        <div className = "pageBtn">
-            <Button id = "btnId" onClick={() => setPage(page - 1)} disabled={page === 1}>
-                &lt;
-            </Button>
-            {Array(numPages)
-                .fill()
-                .map((_, i) => (
-                    <Button id = "btnId"
-                            key={i + 1}
-                            onClick={() => setPage(i + 1)}
-                            aria-current={page === i + 1 ? "page" : null}
-                    >
-                        {i + 1}
-                    </Button>
-                ))}
-            <Button id = "btnId" onClick={() => setPage(page + 1)} disabled={page === numPages}>
-                &gt;
-            </Button>
-        </div>
-    )
+let active = 2;
+let items = [];
+for (let number = 1; number <= 5; number++) {
+    items.push(
+        <Pagination.Item key={number} active={number === active}>
+            {number}
+        </Pagination.Item>,
+    );
 }
 
-export default Pag;
+const paginationBasic = (
+    <div>
+        <Pagination>{items}</Pagination>
+        <br />
+
+        <Pagination size="lg">{items}</Pagination>
+        <br />
+
+        <Pagination size="sm">{items}</Pagination>
+    </div>
+);
+
+render(paginationBasic);

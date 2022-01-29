@@ -2,6 +2,7 @@ import React from 'react';
 import Boards from "./QnABoard";
 import Navbars from "../../navbar/Navbar";
 import Footers from  "../../footer/FooterMain";
+import Paginations from "../faq/Pagination";
 import {Image} from "react-bootstrap";
 
 class WarningMain extends React.Component {
@@ -16,6 +17,7 @@ class WarningMain extends React.Component {
                 </div>
                 <h2 style={{color:"#162B7D", marginLeft:"50px",marginBottom:"50px",marginTop:"50px"}}>QnA</h2>
                 <Boards></Boards>
+                
                 <Footers></Footers>
             </div>
         )

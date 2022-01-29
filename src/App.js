@@ -1,7 +1,10 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Main from "./pages/main/Main";
 import FAQ from "./pages/faq/FAQ";
+import QNA from "./pages/qna/QnAMain"
 import Warning from "./pages/warning/WarningMain";
+import InfoKey from "./pages/infoKey/InfoKey";
+import InfoTuto from "./pages/infoTuto/InfoTuto";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 

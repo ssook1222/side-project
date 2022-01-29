@@ -5,12 +5,15 @@ class Boards extends React.Component {
     render() {
         return(
             <div>
-                <ListGroup style={{width:"80%", marginLeft:"auto",marginRight:"auto", marginBottom:"30px"}}>
-                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                    <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                    <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                <ListGroup className="boardLists"
+                           style={{width:"80%",
+                               display:"block",
+                               marginLeft:"auto",
+                               marginRight:"auto",
+                           marginBottom:"100px"}}>
+                    <ListGroup.Item action href="#link1">
+                        Link 1
+                    </ListGroup.Item>
                 </ListGroup>
             </div>
         )
