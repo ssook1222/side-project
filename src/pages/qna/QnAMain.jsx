@@ -1,5 +1,5 @@
 import React from 'react';
-import Boards from "./QnABoard";
+import Boards from "../qna/QnABoardApp";
 import Navbars from "../../navbar/Navbar";
 import Footers from  "../../footer/FooterMain";
 import {Image} from "react-bootstrap";
