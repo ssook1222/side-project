@@ -19,14 +19,14 @@ class Tables extends React.Component {
                     <td>1차 수강신청</td>
                     <td>전체 재학생</td>
                     <td>2월 11일 오전 9시 ~ 2월 16일 오후 5시</td>
-                    <td>학교 홈페이지 > Quick Link> 수강신청<br/>
+                    <td>학교 홈페이지 {'>'} Quick Link {'>'} 수강신청<br/>
                         [약대 제외 모두 선착순 아님]</td>
                 </tr>
                 <tr>
                     <td>수강신청 결과조회</td>
                     <td>전체 재학생</td>
                     <td>2월 21일 오후 4시~</td>
-                    <td>숙명 포털 시스템 > 학사 > 수강신청 > 수강조회</td>
+                    <td>숙명 포털 시스템 {'>'} 학사 {'>'} 수강신청 {'>'} 수강조회</td>
                 </tr>
                 <tr>
                     <td>수강정정<br/><br/>
@@ -36,7 +36,7 @@ class Tables extends React.Component {
                     </td>
                     <td>3/4학년</td>
                     <td>2월 22일 오전 8시 ~ 오후 5시</td>
-                    <td>학교홈페이지 > Quick Link > 수강신청 [선착순]</td>
+                    <td>학교홈페이지 {'>'} Quick Link {'>'} 수강신청 [선착순]</td>
                 </tr>
                 <tr>
                     <td>수강정정<br/><br/>
@@ -46,7 +46,7 @@ class Tables extends React.Component {
                     </td>
                     <td>1/2학년</td>
                     <td>2월 23일 오전 8시 ~ 오후 5시</td>
-                    <td>학교홈페이지 > Quick Link > 수강신청 [선착순]</td>
+                    <td>학교홈페이지 {'>'} Quick Link {'>'} 수강신청 [선착순]</td>
                 </tr>
                 <tr>
                     <td>개강 전 수강정정<br/><br/>
@@ -54,19 +54,19 @@ class Tables extends React.Component {
                     </td>
                     <td>전체 재학생</td>
                     <td>2월 24일 오전 8시 ~ 오후 5시</td>
-                    <td>학교홈페이지 > Quick Link > 수강신청 [선착순]</td>
+                    <td>학교홈페이지 {'>'} Quick Link {'>'} 수강신청 [선착순]</td>
                 </tr>
                 <tr>
                     <td>개강 후 수강정정</td>
                     <td>전체 재학생</td>
                     <td>3월 2일 오전 8시 ~ 3월 8일 24시(자정)</td>
-                    <td>학교홈페이지 > Quick Link > 수강신청 [선착순]</td>
+                    <td>학교홈페이지 {'>'} Quick Link {'>'} 수강신청 [선착순]</td>
                 </tr>
                 <tr>
                     <td>수강포기(4주차)</td>
                     <td>수강 포기 희망자</td>
                     <td>3월 23일 오전 10시 ~ 3월 29일 오후 24시(자정)</td>
-                    <td>숙명포털시스템 > 학사 > 수강신청 > 수강조회</td>
+                    <td>숙명포털시스템 {'>'} 학사 {'>'} 수강신청 {'>'} 수강조회</td>
                 </tr>
                 </tbody>
             </Table>
