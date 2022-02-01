@@ -29,9 +29,9 @@ class InfoTuto extends React.Component {
                 style={{
                     color: color,
                     backgroundColor: color,
-                    height: 3,
-                    marginTop: "20px",
-                    marginBottom: "20px"
+                    height: 2,
+                    marginTop: "5px",
+                    marginBottom: "2%"
                 }}
             />
         );
@@ -45,7 +45,7 @@ class InfoTuto extends React.Component {
                     * 버튼 혹은 검은색 물음표를 클릭하면 해당 내용에 대한 설명을 확인할 수 있습니다.
                 </h1>
                 
-                <Image style = {{width: "100%", marginBottom: "25px"}} src="../images/tutorial/0.png" />
+                <Image style = {{width: "100%", marginBottom: "1.5%"}} src="../images/tutorial/0.png" />
 
                 <div className='registerList'>
                     <h4 style={{marginTop: "25px", marginLeft: "1.5%", fontSize: "1.7vw" }}>학생기본정보.</h4>
@@ -69,12 +69,12 @@ class InfoTuto extends React.Component {
                             {({ ref, ...triggerHandler }) => (
                             <Button
                                 variant="outline-light"
-                                style = {{padding: "0px", marginLeft: "10px"}}
+                                style = {{padding: "0px", marginLeft: "0.5%", height:"2%", width:"2%"}}
                                 {...triggerHandler}
                                 className="d-inline-flex align-items-center">
                                 <Image
                                 ref={ref}
-                                style = {{width:"25px"}}
+                                style = {{width:"100%"}}
                                 src="../images/tutorial/question.png"/>
                             </Button>
                             )}
@@ -104,12 +104,12 @@ class InfoTuto extends React.Component {
                             {({ ref, ...triggerHandler }) => (
                             <Button
                                 variant="outline-light"
-                                style = {{padding: "0px", marginLeft: "10px"}}
+                                style = {{padding: "0px", marginLeft: "0.5%", height:"2%", width:"2%"}}
                                 {...triggerHandler}
                                 className="d-inline-flex align-items-center">
                                 <Image
                                 ref={ref}
-                                style = {{width:"25px"}}
+                                style = {{width:"100%"}}
                                 src="../images/tutorial/question.png"/>
                             </Button>
                             )}
