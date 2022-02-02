@@ -10,7 +10,7 @@ class InfoTuto extends React.Component {
             <Popover id="popover-basic">
               <Popover.Header as="h3" id = "boldTxt">수강순위 조회</Popover.Header>
               <Popover.Body id = "justTxt">
-                    그것에 대한 내용...
+                  신청한 분반 내에서 본인의 수강순위를 조회하여 수강확전/탈락 여부를 미리 예상해 볼 수 있습니다.
               </Popover.Body>
             </Popover>
           );
@@ -19,7 +19,7 @@ class InfoTuto extends React.Component {
             <Popover id="popover-basic">
               <Popover.Header as="h3" id = "boldTxt">수업평가결과조회</Popover.Header>
               <Popover.Body id = "justTxt">
-                    과목별/교수별 이전 수업평가 결과 조회가 가능합니다.
+                  과목별/교수별 이전 수업평가 결과 조회가 가능합니다.
               </Popover.Body>
             </Popover>
           );
@@ -29,9 +29,9 @@ class InfoTuto extends React.Component {
                 style={{
                     color: color,
                     backgroundColor: color,
-                    height: 3,
-                    marginTop: "20px",
-                    marginBottom: "20px"
+                    height: 2,
+                    marginTop: "5px",
+                    marginBottom: "2%"
                 }}
             />
         );
@@ -45,7 +45,7 @@ class InfoTuto extends React.Component {
                     * 버튼 혹은 검은색 물음표를 클릭하면 해당 내용에 대한 설명을 확인할 수 있습니다.
                 </h1>
                 
-                <Image style = {{width: "100%", marginBottom: "25px"}} src="../images/tutorial/0.png" />
+                <Image style = {{width: "100%", marginBottom: "1.5%"}} src="../images/tutorial/0.png" />
 
                 <div className='registerList'>
                     <h4 style={{marginTop: "25px", marginLeft: "1.5%", fontSize: "1.7vw" }}>학생기본정보.</h4>
@@ -63,17 +63,18 @@ class InfoTuto extends React.Component {
                             placement="right"
                             overlay={<Tooltip id="button-tooltip-2">
                                 <h5>수강신청내역</h5>
-                                <h6>그것에 대한 설명...</h6>
+                                <h6>개설과목 조회에서 과목 및 분반 조회 후 신청 버튼을 클릭해 수강신청한 과목을 확인할 수 있습니다.
+                                    <br/> 수강신청 내역에서는 취소할 과목에 대해 취소 버튼을 클릭해 수강 취소를 할 수 있습니다.</h6>
                             </Tooltip>}>
                             {({ ref, ...triggerHandler }) => (
                             <Button
                                 variant="outline-light"
-                                style = {{padding: "0px", marginLeft: "10px"}}
+                                style = {{padding: "0px", marginLeft: "0.5%", height:"2%", width:"2%"}}
                                 {...triggerHandler}
                                 className="d-inline-flex align-items-center">
                                 <Image
                                 ref={ref}
-                                style = {{width:"25px"}}
+                                style = {{width:"100%"}}
                                 src="../images/tutorial/question.png"/>
                             </Button>
                             )}
@@ -98,17 +99,17 @@ class InfoTuto extends React.Component {
                             placement="right"
                             overlay={<Tooltip id="button-tooltip-2">
                                 <h5>개설과목조회</h5>
-                                <h6>그것에 대한 설명...</h6>
+                                <h6>과목별 조회 탭을 이용하여 희망 과목을 조회한 후 신청 버튼을 눌러서 수강신청을 진행할 수 있습니다.</h6>
                             </Tooltip>}>
                             {({ ref, ...triggerHandler }) => (
                             <Button
                                 variant="outline-light"
-                                style = {{padding: "0px", marginLeft: "10px"}}
+                                style = {{padding: "0px", marginLeft: "0.5%", height:"2%", width:"2%"}}
                                 {...triggerHandler}
                                 className="d-inline-flex align-items-center">
                                 <Image
                                 ref={ref}
-                                style = {{width:"25px"}}
+                                style = {{width:"100%"}}
                                 src="../images/tutorial/question.png"/>
                             </Button>
                             )}
@@ -121,7 +122,7 @@ class InfoTuto extends React.Component {
                         <Button variant="success" id="tutoBtn">수업평가결과조회</Button>
                     </OverlayTrigger>
 
-                    <Image id="tutoImg" src="../images/tutorial/3.png" />
+                    <Image id="tutoImg" src="../images/tutorial/3_1.png" />
                 </div>
 
                 <Footers></Footers>

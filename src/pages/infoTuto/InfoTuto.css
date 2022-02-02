@@ -1,11 +1,11 @@
 #tutoBtn {
-    font-size: 1vw; 
+    font-size: 1vw;
     /* font-size: 17px */ 
     background-color: #E3E3E3;
     border-color: #979797;
     color: black;
-    width: 8%;
-    /* width: 135px */
+    height: 1%;
+    /* width: 135px or 8% */
     padding-right: 2px;
     padding-left: 2px;
     margin-left: 2%;
