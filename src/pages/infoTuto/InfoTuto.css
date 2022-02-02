@@ -18,7 +18,7 @@
     /* margin-bottom: 50px; */
     margin-top: 15px; 
     width: 93%;
-    /* width: 1600px; */
+    /* width: 1500px;*/
 }
 
 #boldTxt {
@@ -30,4 +30,9 @@
 #justTxt {
     font-size: 1vmax; 
     /* font-size: 15px*/
+}
+
+#questionM[aria-describedby="button-tooltip-2"]{
+    font-size: 1vw !important;
+    color:red;
 }
