@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
           <Routes>
               <Route>
-                  <Route path="/" element={<Main />}></Route>
+                  <Route exact path="/" element={<Main />}></Route>
                   <Route path="/FAQ" element={<FAQ />}></Route>
                   <Route path="/Warning" element={<Warning/>}></Route>
                   <Route path="/QnA" element={<QNA/>}></Route>

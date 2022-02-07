@@ -1,5 +1,5 @@
 export interface Board{
-    questionid: number;
+    questionid?: number;
     id: string;
     password: string;
     title: string;
