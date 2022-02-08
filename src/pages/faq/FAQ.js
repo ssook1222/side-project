@@ -34,13 +34,15 @@ class FAQ extends React.Component {
         })
         .catch(error => {console.log(error);});
     }
-    
+
+
     HandleClick = (e) => {
         this.setState({id: e.target.id});
         // 버튼을 클릭하면 검색한 내용 초기화
         this.setState({query: ""});
         this.setState({setQuery: ""});
     }
+
     
     HandleClick_ = () => {
         this.setState({setQuery: this.state.query});
@@ -105,13 +107,13 @@ class FAQ extends React.Component {
 
                 </div>
 
-                <Faqlist list = {
+                <Faqlist clikcedBtn = {this.state.id} list = {
                     this.state.faqInfo.filter(faq => (
                         // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
-                        faq.id === this.state.id 
+                        faq.id === this.state.id
                         && (faq.question.toLowerCase().includes(this.state.setQuery.toLowerCase())
                         || faq.answer.toLowerCase().includes(this.state.setQuery.toLowerCase()))
-                    )) 
+                    ))
                 } />
 
                 <Footers />

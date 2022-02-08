@@ -26,9 +26,10 @@ const Faqlist = (props) => {
             <Pagination
                 total={props.list.length}
                 limit={limit}
-                page={page}
-                setPage={setPage} />
-                    
+                page={props.page}
+                setPage={setPage}
+                clickedBtn={props.clikcedBtn}
+            />
         </div>
     )
 }
