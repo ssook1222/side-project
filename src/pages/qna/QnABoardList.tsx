@@ -3,8 +3,10 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {Button, Col, ListGroup, Row} from "react-bootstrap";
 import {Board} from "../../dto/Board";
+import {useNavigate} from "react-router-dom";
 
 const BoardList: React.FC = (props: any) => {
+    let navigate = useNavigate();
     console.log(props);
     const [boardList, setBoardList] = useState<Array<Board>>([]);
 
@@ -31,7 +33,7 @@ const BoardList: React.FC = (props: any) => {
                         <Row style={{
                             paddingBottom:"10px",paddingTop:"10px",
                             borderBottom:"1px solid #dddddd"}}>
-                            <Button className="btn-light">
+                            <Button className="btn-light" onClick={()=>navigate(`/board-view/${board.questionid}`)}>
                                 <Col style={{display:"inline-block"}} xs={12} md={8}>{board.title}</Col>
                                 <Col style={{display:"inline-block"}} xs={6} md={4}>{board.id}</Col>
                             </Button>
