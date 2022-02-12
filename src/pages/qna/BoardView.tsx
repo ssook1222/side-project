@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import {Board} from "../../dto/Board";
 import axios from "axios";
 import {Card} from "react-bootstrap";
+import {CommentList} from "../../components/CommentList";
 
 const BoardView: React.FC = () => {
 
@@ -26,12 +27,18 @@ const BoardView: React.FC = () => {
 
     return (
         <div>
-            <Card>
-                <Card.Title>{board?.title}</Card.Title>
-                <Card.Text>
+            <Card style={{marginTop:"30px", width:"80%", display:"block", marginLeft:"auto", marginRight:"auto"}}>
+                <Card.Title
+                style={{marginTop:"30px", marginLeft:"30px"}}><h3>{board?.title}</h3></Card.Title>
+                <Card.Text style={{marginTop:"5px", marginLeft:"30px"}}>
+                    {board?.id}
+                </Card.Text>
+                <hr/>
+                <Card.Text style={{marginTop:"30px", marginLeft:"30px", marginBottom:"30px"}}>
                     {board?.contents}
                 </Card.Text>
             </Card>
+            <CommentList board_id={parameter.questionid}></CommentList>
         </div>
     );
 };
