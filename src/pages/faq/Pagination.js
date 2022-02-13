@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import { Button } from 'react-bootstrap';
 import './Pagination.css'
 
-function Pagination({ total, limit, page, setPage }) {
+function Pagination({ total, limit, page, setPage, clickedBtn }) {
     const numPages = Math.ceil(total / limit);
 
     return (
@@ -24,6 +24,7 @@ function Pagination({ total, limit, page, setPage }) {
             <Button id = "btnId" onClick={() => setPage(page + 1)} disabled={page === numPages}>
             &gt;
             </Button>
+            {console.log(total, numPages, clickedBtn)}
         </div>
     )
 }
