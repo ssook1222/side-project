@@ -16,6 +16,7 @@ class WarningMain extends React.Component {
                         src="../images/Schedule.png"></Image>
                 </div>
                 <Schedule></Schedule>
+                <hr style={{marginTop:"30px"}}/>
                 <Information></Information>
                 <Footers></Footers>
             </div>
