@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {Comment} from "../dto/Comments";
 import axios from "axios";
 import {Button, Col, Form, Row} from "react-bootstrap";
+import {useNavigate, useParams} from "react-router-dom";
 
 interface Props {
     board_id: number;
@@ -10,6 +11,9 @@ interface Props {
 export const CommentList: React.FC<Props> = (props) => {
 
     const [comments, setComments] = useState<Array<Comment>>([]);
+
+    let navigate = useNavigate();
+    let parameter: any = useParams();
 
     useEffect(() => {
 
@@ -21,8 +25,6 @@ export const CommentList: React.FC<Props> = (props) => {
 
     const getComments = async (board_id: number) => {
         const res = await axios.get(`/api/comments?board_id=${props.board_id}`);
-        console.log(props.board_id);
-        console.log(res.data);
         if(props.board_id===board_id){
             setComments(res.data);
         }
@@ -49,6 +51,14 @@ export const CommentList: React.FC<Props> = (props) => {
         form.commentText.value = '';
     };
 
+    const handleDelete = async (id: number | undefined) => {
+
+        const res = await axios.delete(`/api/comment?id=${id}`);
+        console.log(res.data)
+        alert("정상적으로 삭제되었습니다.");
+        window.location.replace(`/board-view/${props.board_id}`);
+    }
+
     return (
         <>
             <Form className="mb-4" onSubmit={handleSubmit}
@@ -57,6 +67,8 @@ export const CommentList: React.FC<Props> = (props) => {
                 marginLeft:"auto", marginRight:"auto",
                 marginTop:"30px"
             }}>
+
+            <hr style={{marginBottom:"40px"}}/>
                 <Form.Group controlId="commentText">
                     <Form.Label><h5>댓글</h5></Form.Label>
                     <Form.Control required as="textarea" rows={4} />
@@ -76,6 +88,14 @@ export const CommentList: React.FC<Props> = (props) => {
                         <Col>익명의 눈송이{comment.id}</Col>
                         <hr style={{marginTop:"10px",marginBottom:"10px"}}/>
                         <Col>{comment.content}</Col>
+                        <Button
+                                key={comment.id}
+                                onClick={()=>{
+                                    handleDelete(comment.id)}}
+                                variant={"light"}
+                                style={{display:"block",
+                                    width:"20%",
+                                marginTop:"30px"}}>삭 제</Button>
                     </Row>
                 )
             }
