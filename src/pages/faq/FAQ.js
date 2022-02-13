@@ -10,7 +10,7 @@ class FAQ extends React.Component {
 
     constructor(props) {
         super(props);
-        
+
         this.state = {
             id: "btn1",
             faqInfo: [],
@@ -18,14 +18,14 @@ class FAQ extends React.Component {
             setQuery: "", // #searchBtn 누르면 현재 query값 넣음
         };
     }
-    
+
     componentDidMount() {
         this.getInfo();
     }
-    
+
     getInfo(){
         const info = 'dummy/faqInfo.json';
-        
+
         axios.get(info)
         .then(data => {
             this.setState({
@@ -35,6 +35,14 @@ class FAQ extends React.Component {
         .catch(error => {console.log(error);});
     }
 
+    est =() =>{
+        this.state.faqInfo.filter(faq => (
+            // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
+            faq.id === this.state.id
+            && (faq.question.toLowerCase().includes(this.state.setQuery.toLowerCase())
+                || faq.answer.toLowerCase().includes(this.state.setQuery.toLowerCase()))
+        ))
+    }
 
     HandleClick = (e) => {
         this.setState({id: e.target.id});
@@ -43,13 +51,12 @@ class FAQ extends React.Component {
         this.setState({setQuery: ""});
     }
 
-    
     HandleClick_ = () => {
         this.setState({setQuery: this.state.query});
         // 검색버튼 누르면 검색창에서 검색 내용 초기화
         this.setState({query: ""});
     }
-    
+
     HandleChange = (e) => {
         this.setState({query: e.target.value});
     }
@@ -67,7 +74,7 @@ class FAQ extends React.Component {
                 e.target.classList.add("clicked");
             }
         }
-        
+
         function init() {
             for (var i = 0; i < btnClassN.length; i++) {
                 btnClassN[i].addEventListener("click", clickedBtn);
@@ -97,7 +104,7 @@ class FAQ extends React.Component {
                            onChange={this.HandleChange}/>
                     <Image id = "searchBtn" src="/images/searchBtn.png" onClick={this.HandleClick_} />
                 </div>
-                
+
                 <div className = "btnFaq">
 
                     <Button className = "btn_type clicked" id="btn1" onClick = {this.HandleClick}>수강정정</Button>
@@ -107,7 +114,7 @@ class FAQ extends React.Component {
 
                 </div>
 
-                <Faqlist clikcedBtn = {this.state.id} list = {
+                <Faqlist list = {
                     this.state.faqInfo.filter(faq => (
                         // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
                         faq.id === this.state.id
