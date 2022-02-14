@@ -1,6 +1,6 @@
 .background3 {
     background-color: #E9E9F2;
-    height:150vmin;
+    width: 100%;
 }
 
 .mb-3 {
@@ -8,26 +8,31 @@
 }
 
 #controlled-tab-tab-major {
+    color: #162B7D;
     font-weight: bold;
     font-size: 1.5vmax;
 }
 
 #controlled-tab-tab-general {
+    color: #162B7D;
     font-weight: bold;
     font-size: 1.5vmax;
 }
 
 #controlled-tab-tab-level {
+    color: #162B7D;
     font-weight: bold;
     font-size: 1.5vmax;
 }
 
 #controlled-tab-tab-change {
+    color: #162B7D;
     font-weight: bold;
     font-size: 1.5vmax;
 }
 
 #controlled-tab-tab-etc {
+    color: #162B7D;
     font-weight: bold;
     font-size: 1.5vmax;
 }
@@ -38,19 +43,19 @@
 }
 
 .tab-content {
-    width:70%;
-    float: right;
+    margin-top: -4%;
     padding-bottom: 20%;
     background-color: #E9E9F2;
 }
 
 .textIn {
-    margin-left: 2%;
+    margin-left: 30%;
+    margin-top: 8%;
 }
 
 #textTitle {
     /*font-size: 2.5vmax;*/
-    font-size: 5vmin;
+    font-size: 4.5vmin;
     font-weight: bolder;
     line-height: 1.8em;
     color: #162B7D;
@@ -59,17 +64,18 @@
 #textMain {
     margin-right: 10%;
     /*font-size: 1.25vmax;*/
-    font-size: 2.5vmin;
+    font-size: 2.25vmin;
     color: #162B7D;
     line-height: 2em;
 }
 
 .panel {
-    margin-top: 3%;
-    width: 20%;
-    margin-left: 5%;
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 19%;
     background-color: white;
     color: #162B7D;
+    float: left;
 }
 
 #panel_ {
@@ -97,12 +103,6 @@
     border: white;
     font-weight: bold;
     font-size: 2.5vmin;
-}
-
-.highlighter .highlighted {
-    background-color: #ffeaa7;
-    color: #e17055;
-    font-weight: bold;
 }
 
 .KeyTable {
