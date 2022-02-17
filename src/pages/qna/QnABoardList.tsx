@@ -15,7 +15,7 @@ const BoardList: React.FC = (props: any) => {
     }, []);
 
     const getBoardList = async () => {
-        const res  = await axios.get(`/api/board/read?page_number=1&page_size=10`);
+        const res  = await axios.get(`/api/board/read?page_number=1&page_size=30`);
         //생각해보니 시작할 때는 항상 1임
         console.log(res.data.length);
         setBoardList(res.data);
