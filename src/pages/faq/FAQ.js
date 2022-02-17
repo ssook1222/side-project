@@ -7,25 +7,24 @@ import Faqlist from './faqList';
 import { Button, Image } from 'react-bootstrap';
 
 class FAQ extends React.Component {
-
     constructor(props) {
         super(props);
-        
         this.state = {
             id: "btn1",
             faqInfo: [],
             query: "", // #searchBar의 value값
             setQuery: "", // #searchBtn 누르면 현재 query값 넣음
+            //list: []
         };
     }
-    
+
     componentDidMount() {
         this.getInfo();
     }
-    
+
     getInfo(){
         const info = 'dummy/faqInfo.json';
-        
+
         axios.get(info)
         .then(data => {
             this.setState({
@@ -35,15 +34,20 @@ class FAQ extends React.Component {
         .catch(error => {console.log(error);});
     }
 
-
     HandleClick = (e) => {
         this.setState({id: e.target.id});
         // 버튼을 클릭하면 검색한 내용 초기화
         this.setState({query: ""});
         this.setState({setQuery: ""});
+        // this.setState({list:
+        //     this.state.faqInfo.filter((faq) => (
+        //         // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
+        //         faq.id === e.target.id
+        //         && (faq.question.toLowerCase().includes(this.state.setQuery.toLowerCase())
+        //             || faq.answer.toLowerCase().includes(this.state.setQuery.toLowerCase()))))
+        // })
     }
 
-    
     HandleClick_ = () => {
         this.setState({setQuery: this.state.query});
         // 검색버튼 누르면 검색창에서 검색 내용 초기화
@@ -114,7 +118,11 @@ class FAQ extends React.Component {
                         && (faq.question.toLowerCase().includes(this.state.setQuery.toLowerCase())
                         || faq.answer.toLowerCase().includes(this.state.setQuery.toLowerCase()))
                     ))
-                } />
+                }/>
+
+                {/*<Faqlist clikcedBtn = {this.state.id}*/}
+                {/*         list = {this.state.list}>*/}
+                {/*    {console.log(this.state.list)}</Faqlist>*/}
 
                 <Footers />
             </div>
