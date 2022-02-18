@@ -22,10 +22,9 @@ class FAQ extends React.Component {
         this.getInfo();
     }
 
-    getInfo(){
-        const info = 'dummy/faqInfo.json';
-
-        axios.get(info)
+    async getInfo() {
+        //const info = axios.get('/api/faq');
+        axios.get('/api/FAQ')
         .then(data => {
             this.setState({
                 faqInfo: data.data.faqInfo
