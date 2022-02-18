@@ -22,12 +22,12 @@ class FAQ extends React.Component {
         this.getInfo();
     }
 
-    async getInfo() {
-        //const info = axios.get('/api/faq');
+    getInfo() {
+        //const info = axios.get('/api/FAQ');
         axios.get('/api/FAQ')
-        .then(data => {
+        .then(arr => {
             this.setState({
-                faqInfo: data.data.faqInfo
+                faqInfo: arr.data
             });
         })
         .catch(error => {console.log(error);});
@@ -113,7 +113,7 @@ class FAQ extends React.Component {
                 <Faqlist clikcedBtn = {this.state.id} list = {
                     this.state.faqInfo.filter(faq => (
                         // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
-                        faq.id === this.state.id
+                        faq.category === this.state.id
                         && (faq.question.toLowerCase().includes(this.state.setQuery.toLowerCase())
                         || faq.answer.toLowerCase().includes(this.state.setQuery.toLowerCase()))
                     ))
