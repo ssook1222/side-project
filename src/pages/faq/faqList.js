@@ -10,6 +10,7 @@ const Faqlist = (props) => {
 
     return (
         <div id='faq_list'>
+            {console.log("offset:", offset, props.list)}
             {props.list.slice(offset, offset+limit).map((faq, index) => (
                 <Accordion defaultActiveKey={index} flush>
                     <Accordion.Item eventKey={faq.question}>
