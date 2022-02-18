@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import { Button } from 'react-bootstrap';
 import './Pagination.css'
 
@@ -10,6 +9,7 @@ function Pagination({ total, limit, page, setPage, clickedBtn }) {
             <Button id = "btnId" onClick={() => setPage(page - 1)} disabled={page === 1}>
             &lt;
             </Button>
+
             {Array(numPages)
             .fill()
             .map((_, i) => (
@@ -21,10 +21,10 @@ function Pagination({ total, limit, page, setPage, clickedBtn }) {
                 {i + 1}
                 </Button>
             ))}
+
             <Button id = "btnId" onClick={() => setPage(page + 1)} disabled={page === numPages}>
             &gt;
             </Button>
-            {console.log(total, numPages, clickedBtn)}
         </div>
     )
 }
