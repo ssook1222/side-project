@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import "./FAQ.css"
 import Navbars from "../../navbar/Navbar";
 import Footers from  "../../footer/FooterMain";
 import Faqlist from './faqList';
-import { Button, Image } from 'react-bootstrap';
+import { Button, Image, NavLink } from 'react-bootstrap';
 
 class FAQ extends React.Component {
     constructor(props) {
@@ -15,6 +15,7 @@ class FAQ extends React.Component {
             query: "", // #searchBar의 value값
             setQuery: "", // #searchBtn 누르면 현재 query값 넣음
             //list: []
+            page: 1
         };
     }
 
@@ -33,11 +34,12 @@ class FAQ extends React.Component {
         .catch(error => {console.log(error);});
     }
 
-    HandleClick = (e) => {
-        this.setState({id: e.target.id});
+    HandleClick = (props) => {
+        this.setState({id: props.target.id});
         // 버튼을 클릭하면 검색한 내용 초기화
         this.setState({query: ""});
         this.setState({setQuery: ""});
+        this.setState({page: 1})
         // this.setState({list:
         //     this.state.faqInfo.filter((faq) => (
         //         // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
@@ -109,8 +111,7 @@ class FAQ extends React.Component {
                     <Button className = "btn_type" id="btn4" onClick = {this.HandleClick}>기타과목</Button>
 
                 </div>
-
-                <Faqlist clikcedBtn = {this.state.id} list = {
+                <Faqlist page = {this.state.page} list = {
                     this.state.faqInfo.filter(faq => (
                         // 버튼 클릭 or 검색 내용이 질문 또는 대답에 포함되는 경우
                         faq.category === this.state.id

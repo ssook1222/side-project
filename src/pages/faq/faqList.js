@@ -1,6 +1,6 @@
 import "./FAQ.css"
-import React, {useEffect, useState} from 'react';
-import {Accordion, Button} from 'react-bootstrap';
+import React, {useState} from 'react';
+import {Accordion} from 'react-bootstrap';
 import Pagination from "./Pagination";
 
 const Faqlist = (props) => {
@@ -10,7 +10,7 @@ const Faqlist = (props) => {
 
     return (
         <div id='faq_list'>
-            {console.log("offset:", offset, props.list)}
+            {console.log("props page", props.page, "page", page, "offset", offset)}
             {props.list.slice(offset, offset+limit).map((faq, index) => (
                 <Accordion defaultActiveKey={index} flush>
                     <Accordion.Item eventKey={faq.question}>
@@ -28,8 +28,7 @@ const Faqlist = (props) => {
                 total={props.list.length}
                 limit={limit}
                 page={page}
-                setPage={setPage}
-                clickedBtn={props.clikcedBtn} />
+                setPage={setPage} />
         </div>
     )
 }

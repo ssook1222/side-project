@@ -50,6 +50,7 @@
   },
   "proxy": "http://localhost:8080",
   "devDependencies": {
+    "@types/react-js-pagination": "^3.0.4",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1"
   }
