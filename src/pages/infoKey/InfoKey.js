@@ -220,7 +220,7 @@ function ControlledTabs(props) {
                         수강신청 화면 탭 설명입니다.
                         <Image
                             style = {{width: "100%"}}
-                            src="../images/infoKey_ETC.png"/>
+                            src="../images/info.PNG"/>
                         <ColoredLine color="#162B7D" />
                         ◉ <strong id="etc_1">타학과</strong>: 타학과의 전공 개설 과목을 조회할 수 있습니다.<br /><br />
                         ◉ <strong id="etc_2">교직</strong>: 전체 교직 과목을 검색할 수 있으며, 교직 탭에서는 교과구분이 '교직'인 과목만 검색됩니다.
