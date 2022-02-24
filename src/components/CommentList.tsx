@@ -88,14 +88,14 @@ export const CommentList: React.FC<Props> = (props) => {
                         <Col>익명의 눈송이{comment.id}</Col>
                         <hr style={{marginTop:"10px",marginBottom:"10px"}}/>
                         <Col>{comment.content}</Col>
-                        <Button
-                                key={comment.id}
-                                onClick={()=>{
-                                    handleDelete(comment.id)}}
-                                variant={"light"}
-                                style={{display:"block",
-                                    width:"20%",
-                                marginTop:"30px"}}>삭 제</Button>
+                        {/*<Button*/}
+                        {/*        key={comment.id}*/}
+                        {/*        onClick={()=>{*/}
+                        {/*            handleDelete(comment.id)}}*/}
+                        {/*        variant={"light"}*/}
+                        {/*        style={{display:"block",*/}
+                        {/*            width:"20%",*/}
+                        {/*        marginTop:"30px"}}>삭 제</Button>*/}
                     </Row>
                 )
             }

@@ -51,8 +51,8 @@ const BoardView: React.FC = () => {
                 <Row className="justify-content-right" style={{marginTop:"30px"}}>
                     <Button variant="light" href="/QnA"
                             style={{width:"20%", marginBottom:"30px", marginRight:"50px"}}>돌아가기</Button>
-                    <Button variant="light" onClick={handleDelete}
-                            style={{width:"20%", marginBottom:"30px"}}>삭제</Button>
+                    {/*<Button variant="light" onClick={handleDelete}*/}
+                    {/*        style={{width:"20%", marginBottom:"30px"}}>삭제</Button>*/}
                 </Row>
             </div>
 
