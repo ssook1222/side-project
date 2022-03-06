@@ -8,6 +8,9 @@ import BoardView from "./pages/qna/BoardView";
 import Warning from "./pages/warning/WarningMain";
 import InfoKey from "./pages/infoKey/InfoKey";
 import InfoTuto from "./pages/infoTuto/InfoTuto";
+import ReadyOne from "./pages/practice/practiceFirst/PracticeReadyOne";
+import ReadyTwo from "./pages/practice/practiceFirst/PracticeReadyTwo";
+import ReadyThree from "./pages/practice/practiceFirst/PracticeReadyThree";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 
@@ -24,6 +27,10 @@ function App() {
                   <Route path="/board-view/:questionid" element={<BoardView/>}></Route>
                   <Route path="/infoKey" element={<InfoKey />}></Route>
                   <Route path="/infoTuto" element={<InfoTuto />}></Route>
+
+                  <Route path="/ready/1" element={<ReadyOne/>}></Route>
+                  <Route path="/ready/2" element={<ReadyTwo/>}></Route>
+                  <Route path="/ready/3" element={<ReadyThree/>}></Route>
               </Route>
           </Routes>
       </BrowserRouter>
