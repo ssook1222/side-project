@@ -1,0 +1,38 @@
+#tutoBtn {
+    font-size: 1vw;
+    /* font-size: 17px */ 
+    background-color: #E3E3E3;
+    border-color: #979797;
+    color: black;
+    height: 1%;
+    /* width: 135px or 8% */
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-left: 2%;
+}
+
+#tutoImg {
+    display: block;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    /* margin-bottom: 50px; */
+    margin-top: 15px; 
+    width: 93%;
+    /* width: 1500px;*/
+}
+
+#boldTxt {
+    font-size: 1.25vmax;
+    /* font-size: 20px */ 
+    font-weight: bold;
+}
+
+#justTxt {
+    font-size: 1vmax; 
+    /* font-size: 15px*/
+}
+
+#questionM[aria-describedby="button-tooltip-2"]{
+    font-size: 1vw !important;
+    color:red;
+}

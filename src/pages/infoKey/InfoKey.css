@@ -1,0 +1,111 @@
+.background3 {
+    background-color: #E9E9F2;
+    width: 100%;
+}
+
+.mb-3 {
+    justify-content: space-around;
+}
+
+#controlled-tab-tab-major {
+    color: #162B7D;
+    font-weight: bold;
+    font-size: 1.5vmax;
+}
+
+#controlled-tab-tab-general {
+    color: #162B7D;
+    font-weight: bold;
+    font-size: 1.5vmax;
+}
+
+#controlled-tab-tab-level {
+    color: #162B7D;
+    font-weight: bold;
+    font-size: 1.5vmax;
+}
+
+#controlled-tab-tab-change {
+    color: #162B7D;
+    font-weight: bold;
+    font-size: 1.5vmax;
+}
+
+#controlled-tab-tab-etc {
+    color: #162B7D;
+    font-weight: bold;
+    font-size: 1.5vmax;
+}
+
+#keyWord {
+    align-items: center;
+    font-size: 1.5vmax;
+}
+
+.tab-content {
+    margin-top: -4%;
+    padding-bottom: 20%;
+    background-color: #E9E9F2;
+}
+
+.textIn {
+    margin-left: 30%;
+    margin-top: 8%;
+}
+
+#textTitle {
+    /*font-size: 2.5vmax;*/
+    font-size: 4.5vmin;
+    font-weight: bolder;
+    line-height: 1.8em;
+    color: #162B7D;
+}
+
+#textMain {
+    margin-right: 10%;
+    /*font-size: 1.25vmax;*/
+    font-size: 2.25vmin;
+    color: #162B7D;
+    line-height: 2em;
+}
+
+.panel {
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 19%;
+    background-color: white;
+    color: #162B7D;
+    float: left;
+}
+
+#panel_ {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#panelTitle {
+    /*font-size: 1.2vmax;*/
+    font-size: 3vmin;
+    margin-bottom: 5%;
+}
+
+#panelInfo {
+    font-size: 2vmin;
+    line-height: 3.5vmin;
+    margin-bottom: 3%;
+}
+
+#panelBtn {
+    padding: 0 0 0 0;
+    margin: 0 0 2% 0;
+    color: #162B7D;
+    background-color: white;
+    border: white;
+    font-weight: bold;
+    font-size: 2.5vmin;
+}
+
+.KeyTable {
+    text-align: center;
+    font-size: 2vmin;
+}
