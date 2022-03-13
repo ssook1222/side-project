@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {Table} from "../../../dto/Table";
-import {Button, Col, Row} from "react-bootstrap";
 
 
 const TableView: React.FC = () => {
