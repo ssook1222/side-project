@@ -3,37 +3,9 @@ import axios from "axios";
 import {Table} from "../../../dto/Table";
 
 
-
 const TableView: React.FC = () => {
 
-    const [table, setTable] = useState<Table>({
-        id: 0, lectureForm:" ", lectureName:" ",
-        classType: "",
-        dept: "",
-        difficulty: "",
-        lectureApply: 0,
-        lectureClassfi: "",
-        lectureLanguage: "",
-        lectureNumber: 0,
-        lecturePeople: 0,
-        lecturePoint: "",
-        lectureSeat: 0,
-        lectureSubClass: 0,
-        lectureTime: "",
-        lectureType: "",
-        lectureWarn: "",
-        movie: "",
-        pf: "",
-        plan: "",
-        professor: "",
-        schoolExchange: "",
-        snowboard: "",
-        specification1: "",
-        specification2: "",
-        specification3: "",
-        step: "",
-        withComp: ""
-    });
+    const [table, setTable] = useState<Array<Table>>([]);
 
     useEffect(() => {
         getTable();
@@ -43,13 +15,21 @@ const TableView: React.FC = () => {
         const res = await axios.get(`/api/tables/it`);
         console.log(res.data);
         setTable(res.data);
-        console.log(table.lectureName);
     }
 
 
     return (
         <div>
+            <h4>plz</h4>
             {
+                table.map((table: Table)=>
+                    <Row style={{
+                        paddingBottom:"10px",paddingTop:"10px",
+                        borderBottom:"1px solid #dddddd"}}>
+                            <Col style={{display:"inline-block"}} xs={12} md={8}>{table.id}</Col>
+                            <Col style={{display:"inline-block"}} xs={6} md={4}>{table.lectureName}</Col>
+                    </Row>
+                )
             }
         </div>
     );
