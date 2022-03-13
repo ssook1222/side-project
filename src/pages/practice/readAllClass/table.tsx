@@ -3,7 +3,6 @@ import axios from "axios";
 import {Table} from "../../../dto/Table";
 
 
-
 const TableView: React.FC = () => {
 
     const [table, setTable] = useState<Table>({
@@ -43,13 +42,14 @@ const TableView: React.FC = () => {
         const res = await axios.get(`/api/tables/it`);
         console.log(res.data);
         setTable(res.data);
-        console.log(table.lectureName);
     }
 
 
     return (
         <div>
+            <h4>plz</h4>
             {
+
             }
         </div>
     );

@@ -17,7 +17,6 @@ const BoardList: React.FC = (props: any) => {
 
     useEffect(() => {
         getBoardList();
-        let total = totalBoard();
     }, []);
 
     const getBoardList = async () => {
@@ -26,13 +25,6 @@ const BoardList: React.FC = (props: any) => {
         console.log(res.data.length);
         setBoardList(res.data);
     }
-
-    const totalBoard = async () => {
-        const res  = await axios.get(`/api/board/count`);
-        console.log(res.data);
-        return res.data;
-    }
-
 
     return (
         <div>
