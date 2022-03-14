@@ -4,7 +4,6 @@ import {Table} from "../../../dto/Table";
 import "./table.css"
 import {Col, Row} from "react-bootstrap";
 
-
 const TableView: React.FC = () => {
 
     const [table, setTable] = useState<Array<Table>>([]);
@@ -22,7 +21,6 @@ const TableView: React.FC = () => {
 
     return (
         <div>
-
             {
                 table.map((table: Table)=>
                     <Row style={{
@@ -55,7 +53,6 @@ const TableView: React.FC = () => {
                             <Col className="contents">{table.specification1}</Col>
                             <Col className="contents">{table.specification2}</Col>
                             <Col className="contents">{table.specification3}</Col>
-
                     </Row>
                 )
             }
