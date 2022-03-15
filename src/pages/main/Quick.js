@@ -33,19 +33,19 @@ class Quick extends React.Component {
                         <Button className="btn-light move" href="/InfoKey">더 알아보기</Button>
                     </h1>
                 </div>
-                {/*<div>*/}
-                {/*    <Image*/}
-                {/*        className="circle"*/}
-                {/*        src="../images/main_circle_03.png"></Image>*/}
-                {/*    <h1 className="main-text">수강신청 연습*/}
-                {/*        <br/>*/}
-                {/*        <p className="main-text2" >*/}
-                {/*            상황에 맞는 수강신청 연습을 해볼 수 있습니다.*/}
-                {/*        </p>*/}
-                {/*        <br/>*/}
-                {/*        <Button className="btn-light move" onclick={alert("추후 업데이트 예정입니다!")}>이동하기</Button>*/}
-                {/*    </h1>*/}
-                {/*</div>*/}
+                <div>
+                    <Image
+                        className="circle"
+                        src="../images/main_circle_03.png"></Image>
+                    <h1 className="main-text">수강신청 연습
+                        <br/>
+                        <p className="main-text2" >
+                            상황에 맞는 수강신청 연습을 해볼 수 있습니다.
+                        </p>
+                        <br/>
+                        <Button className="btn-light move" href="/ready/1">이동하기</Button>
+                    </h1>
+                </div>
                 <div>
                     <Image
                         className="circle"

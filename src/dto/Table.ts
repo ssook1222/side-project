@@ -1,0 +1,30 @@
+export interface Table{
+    id:number;
+    lectureForm:string;
+    lectureName:string;
+    lectureNumber:number;
+    lectureSubClass:number;
+    plan:string;
+    movie:string;
+    classType:string;
+    lectureTime:string;
+    professor:string;
+    step:string;
+    lecturePoint:string;
+    lecturePeople:number;
+    lectureApply:number;
+    lectureSeat:number;
+    lectureType:string;
+    lectureLanguage:string;
+    withComp:string;
+    lectureClassfi:string;
+    lectureWarn:string;
+    snowboard:string;
+    dept:string;
+    pf:string;
+    schoolExchange:string;
+    difficulty:string;
+    specification1:string;
+    specification2:string;
+    specification3:string;
+}
