@@ -22,7 +22,6 @@ const TableView: React.FC = () => {
 
     return (
         <div>
-
             {
                 table.map((table: Table)=>
                     <Row style={{
@@ -55,7 +54,6 @@ const TableView: React.FC = () => {
                             <Col className="contents">{table.specification1}</Col>
                             <Col className="contents">{table.specification2}</Col>
                             <Col className="contents">{table.specification3}</Col>
-
                     </Row>
                 )
             }
