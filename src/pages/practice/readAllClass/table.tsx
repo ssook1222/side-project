@@ -4,7 +4,6 @@ import {Table} from "../../../dto/Table";
 import "./table.css"
 import {Col, Row} from "react-bootstrap";
 
-
 const TableView: React.FC = () => {
 
     const [table, setTable] = useState<Array<Table>>([]);
