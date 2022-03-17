@@ -11,6 +11,8 @@ import InfoTuto from "./pages/infoTuto/InfoTuto";
 import ReadyOne from "./pages/practice/practiceFirst/PracticeReadyOne";
 import ReadyTwo from "./pages/practice/practiceFirst/PracticeReadyTwo";
 import ReadyThree from "./pages/practice/practiceFirst/PracticeReadyThree";
+import Classes from "./pages/practice/readAllClass/classes";
+import Practice from "./pages/practice/Practice";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 
@@ -31,6 +33,10 @@ function App() {
                   <Route path="/ready/1" element={<ReadyOne/>}></Route>
                   <Route path="/ready/2" element={<ReadyTwo/>}></Route>
                   <Route path="/ready/3" element={<ReadyThree/>}></Route>
+
+                  <Route path="/read/IT" element={<Classes/>}></Route>
+
+                  <Route path="/practice" element={<Practice />}></Route>
               </Route>
           </Routes>
       </BrowserRouter>
