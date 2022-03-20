@@ -1,5 +1,5 @@
 import axios from "axios";
-import "./AppTable.css"
+import "./ClassesApp.css"
 import {Button, Col, Row} from "react-bootstrap";
 import React, {useEffect, useState} from 'react';
 import {Application} from "../../../dto/Application";

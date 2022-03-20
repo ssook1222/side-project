@@ -11,7 +11,7 @@ import InfoTuto from "./pages/infoTuto/InfoTuto";
 import ReadyOne from "./pages/practice/practiceFirst/PracticeReadyOne";
 import ReadyTwo from "./pages/practice/practiceFirst/PracticeReadyTwo";
 import ReadyThree from "./pages/practice/practiceFirst/PracticeReadyThree";
-import Classes from "./pages/practice/readAllClass/classes";
+import Classes from "./pages/practice/readAllClass/Classes";
 import Practice from "./pages/practice/Practice";
 import Ranking from "./pages/practice/readApplication/Ranking";
 import 'bootstrap/dist/css/bootstrap.min.css';
