@@ -1,6 +1,6 @@
 import React from 'react';
 import AppTable from "./AppTable";
-import "./ClassesApp.css"
+import "./AppTable.css"
 import {Col, Row} from "react-bootstrap";
 import Classes from "../readAllClass/Classes";
 

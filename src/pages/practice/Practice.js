@@ -3,6 +3,7 @@ import { Button, Image, OverlayTrigger, Popover, Tooltip, Alert } from 'react-bo
 import Navbars from '../../navbar/Navbar';
 import Footers from '../../footer/FooterMain'
 import ClassesApp from "./readApplication/ClassesApp";
+import Classes from "./readAllClass/Classes";
 import "./Practice.css"
 class Practice extends React.Component {
 	render() {
@@ -53,7 +54,7 @@ class Practice extends React.Component {
 
 						<ColoredLine color="#387EC6" />
 
-						<Image style = {{width: "1000px", marginLeft: "25px", marginBottom: "15px"}}
+						<Image style = {{width: "1000px", marginLeft: "25px", marginBottom: "20px"}}
 						       src="../images/practice/info.png" />
 					</div>
 
@@ -71,6 +72,14 @@ class Practice extends React.Component {
 					    <p id="sumNum">총 과목 수:</p>
 					    <p id="sumGrade">총 신청학점:</p>
 					    <p id="sumAble">수강가능학점:</p>
+					</div>
+
+					<div id='registerList'>
+						<p id ="title"> 개설과목조회. </p>
+
+						<ColoredLine color="#387EC6" />
+
+						<Classes />
 					</div>
 
 				</div>

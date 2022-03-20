@@ -1,0 +1,10 @@
+#cancelBtn {
+    width: 45px;
+    height: 25px;
+    border: 1px solid lightgray;
+    color: black;
+    background-color: lightgray;
+    font-size: 15px;
+    border-radius: 0px;
+    padding: 0;
+}

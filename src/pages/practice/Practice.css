@@ -6,6 +6,28 @@
     margin-right: 1%;
 }
 
+.AppSum{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 1800px;
+    margin-bottom: 100px;
+}
+
+#sumNum {
+    width: 300px;
+    float: left;
+}
+
+#sumGrade {
+    width: 300px;
+    float: left;
+}
+
+#sumAble {
+    width: 300px;
+    float: left;
+}
+
 #checkBtn{
     background-color: lightgray;
     border: lightgray;
