@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Button, Image, OverlayTrigger, Popover, Tooltip, Alert } from 'react-bootstrap';
 import Navbars from '../../navbar/Navbar';
 import Footers from '../../footer/FooterMain'
+import ClassesApp from "./readApplication/ClassesApp";
 import "./Practice.css"
 class Practice extends React.Component {
 	render() {
@@ -17,7 +18,6 @@ class Practice extends React.Component {
 				}}
 			/>
 		);
-
 
 		function WarningSign() {
 			const [show, setShow] = useState(true);
@@ -45,24 +45,35 @@ class Practice extends React.Component {
 				<WarningSign />
 
 				<div className = "inContent">
-					<Image style = {{width: "1800px", marginBottom: "1.5%"}} src="../images/practice/header.png" />
+					<Image style = {{width: "1800px", marginBottom: "15px"}}
+					       src="../images/practice/header.png" />
 
 					<div id='personal'>
-						<h4 style={{marginTop: "25px", marginLeft: "1.5%"}}> 학생기본정보. </h4>
+						<p id ="title"> 학생기본정보. </p>
 
 						<ColoredLine color="#387EC6" />
 
-						<Image style = {{width: "1000px"}} src="../images/practice/info.png" />
+						<Image style = {{width: "1000px", marginLeft: "25px", marginBottom: "15px"}}
+						       src="../images/practice/info.png" />
 					</div>
 
 					<div id='registerList'>
-						<h4 style={{marginTop: "25px", marginLeft: "1.5%"}}> 수강신청내역. </h4>
+						<p id ="title"> 수강신청내역. </p>
 
 						<ColoredLine color="#387EC6" />
 					</div>
+
+					<Button id="checkBtn" href="/practice/ranking">수강순위조회</Button>
+
+					<ClassesApp/>
+
+					<div className="AppSum">
+					    <p id="sumNum">총 과목 수:</p>
+					    <p id="sumGrade">총 신청학점:</p>
+					    <p id="sumAble">수강가능학점:</p>
+					</div>
+
 				</div>
-
-
 				<Footers></Footers>
 			</div>
 		)
