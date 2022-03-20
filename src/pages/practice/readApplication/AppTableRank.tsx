@@ -4,7 +4,7 @@ import {Button, Col, Row} from "react-bootstrap";
 import React, {useEffect, useState} from 'react';
 import {Application} from "../../../dto/Application";
 
-const AppTable: React.FC = () => {
+const AppTableRank: React.FC = () => {
 
     const [table, setTable] = useState<Array<Application>>([]);
 
@@ -28,17 +28,9 @@ const AppTable: React.FC = () => {
                         <Col className="contents">{table.lectureName}</Col>
                         <Col className="contents">{table.lectureNumber}</Col>
                         <Col className="contents">{table.lectureSubClass}</Col>
-                        <Col className="contents">{table.plan}</Col>
-                        <Col className="contents">{table.classType}</Col>
-                        <Col className="contents">{table.lectureTime}</Col>
-                        <Col className="contents">{table.step}</Col>
-                        <Col className="contents">{table.lecturePoint}</Col>
-                        <Col className="contents">{table.professor}</Col>
-                        <Col className="contents">{table.lectureLanguage}</Col>
-                        <Col className="contents">{table.reason}</Col>
-                        <Col className="contents">{table.applyDate}</Col>
-                        <Col className="contents">{table.retake}</Col>
-                        <Col className="contents"><Button id={"cancelBtn"}>취소</Button></Col>
+                        <Col className="contents">정원 추가</Col>
+                        <Col className="contents">수강신청 인원 추가</Col>
+                        <Col className="contents">본인 순위 추가</Col>
                     </Row>
                 )
             }
@@ -46,4 +38,4 @@ const AppTable: React.FC = () => {
     );
 };
 
-export default AppTable;
+export default AppTableRank;
