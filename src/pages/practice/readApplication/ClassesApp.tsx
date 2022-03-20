@@ -28,7 +28,6 @@ function ClassesApp() {
                     <Col className="titles">취소</Col>
                 </Row>
                 <AppTable></AppTable>
-                <Classes></Classes>
             </div>
         </div>
     );
