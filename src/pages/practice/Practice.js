@@ -3,7 +3,7 @@ import { Button, Image, OverlayTrigger, Popover, Tooltip, Alert } from 'react-bo
 import Navbars from '../../navbar/Navbar';
 import Footers from '../../footer/FooterMain'
 import ClassesApp from "./readApplication/ClassesApp";
-import Classes from "./readAllClass/classes";
+import Classes from "./readAllClass/Classes";
 import "./Practice.css"
 class Practice extends React.Component {
 	render() {

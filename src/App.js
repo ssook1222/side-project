@@ -18,31 +18,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 
 function App() {
-  return (
-      <BrowserRouter>
-          <Routes>
-              <Route>
-                  <Route exact path="/" element={<Main />}></Route>
-                  <Route path="/FAQ" element={<FAQ />}></Route>
-                  <Route path="/Warning" element={<Warning/>}></Route>
-                  <Route path="/QnA" element={<QNA/>}></Route>
-                  <Route path="/board-register" element={<BoardRegister/>}></Route>
-                  <Route path="/board-view/:questionid" element={<BoardView/>}></Route>
-                  <Route path="/infoKey" element={<InfoKey />}></Route>
-                  <Route path="/infoTuto" element={<InfoTuto />}></Route>
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route>
+                    <Route exact path="/" element={<Main />}></Route>
+                    <Route path="/FAQ" element={<FAQ />}></Route>
+                    <Route path="/Warning" element={<Warning/>}></Route>
+                    <Route path="/QnA" element={<QNA/>}></Route>
+                    <Route path="/board-register" element={<BoardRegister/>}></Route>
+                    <Route path="/board-view/:questionid" element={<BoardView/>}></Route>
+                    <Route path="/infoKey" element={<InfoKey />}></Route>
+                    <Route path="/infoTuto" element={<InfoTuto />}></Route>
 
-                  <Route path="/ready/1" element={<ReadyOne/>}></Route>
-                  <Route path="/ready/2" element={<ReadyTwo/>}></Route>
-                  <Route path="/ready/3" element={<ReadyThree/>}></Route>
+                    <Route path="/ready/1" element={<ReadyOne/>}></Route>
+                    <Route path="/ready/2" element={<ReadyTwo/>}></Route>
+                    <Route path="/ready/3" element={<ReadyThree/>}></Route>
 
-                  <Route path="/read/IT" element={<Classes/>}></Route>
+                    <Route path="/read/IT" element={<Classes/>}></Route>
 
-                  <Route path="/practice" element={<Practice />}></Route>
-                  <Route path="/practice/ranking" element={<Ranking />}></Route>
-              </Route>
-          </Routes>
-      </BrowserRouter>
-  );
+                    <Route path="/practice" element={<Practice />}></Route>
+                    <Route path="/practice/ranking" element={<Ranking />}></Route>
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
