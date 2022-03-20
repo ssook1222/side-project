@@ -2,6 +2,7 @@ import React from 'react';
 import AppTable from "./AppTable";
 import "./ClassesApp.css"
 import {Col, Row} from "react-bootstrap";
+import Classes from "../readAllClass/Classes";
 
 function ClassesApp() {
     return (
@@ -27,6 +28,7 @@ function ClassesApp() {
                     <Col className="titles">취소</Col>
                 </Row>
                 <AppTable></AppTable>
+                <Classes></Classes>
             </div>
         </div>
     );
