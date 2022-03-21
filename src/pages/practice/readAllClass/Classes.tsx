@@ -1,5 +1,5 @@
 import React from 'react';
-import Tables from "./Tables";
+// import Tables from "./JinroTable"; -> 상황별로 테이블 바꿔서 사용하면 됨!!!
 import {Col, Row} from "react-bootstrap";
 import "./table.css"
 
@@ -46,7 +46,7 @@ function Classes() {
                     <Col className="titles">특성화영역2</Col>
                     <Col className="titles">특성화영역3</Col>
                 </Row>
-                <Tables></Tables>
+                {/*<Tables></Tables> -> 상황별로 테이블 바꿔서 사용하면 됨!! */}
             </div>
         </div>
     );
