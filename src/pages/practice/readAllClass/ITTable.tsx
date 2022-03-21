@@ -13,7 +13,7 @@ const TableView: React.FC = () => {
     }, []);
 
     const getTable = async () => {
-        const res = await axios.get(`/api/tables/it`);
+        const res = await axios.get(`/api/tables/jinro`);
         console.log(res.data);
         setTable(res.data);
     }
