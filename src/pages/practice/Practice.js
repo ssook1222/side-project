@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button, Image, OverlayTrigger, Popover, Tooltip, Alert } from 'react-bootstrap';
+import { Button, Image, Alert } from 'react-bootstrap';
 import Navbars from '../../navbar/Navbar';
 import Footers from '../../footer/FooterMain'
 import ClassesApp from "./readApplication/ClassesApp";
@@ -46,8 +46,17 @@ class Practice extends React.Component {
 				<WarningSign />
 
 				<div className = "inContent">
-					<Image style = {{width: "1800px", marginBottom: "15px"}}
-					       src="../images/practice/header.png" />
+
+					<div style={{backgroundColor: "#E3E3E3",
+						width: "1800px", height: '70px'}}>
+						<p id="sugangTxt">학부 수강신청</p>
+					</div>
+
+					<div style={{backgroundColor: "#F9F9F9",
+						width: "1800px", height: '95px'}}>
+						<Button id="logoutBtn">로그아웃</Button>
+						<p id="logoutTxt">수강신청 종료후 반드시 "로그아웃" 버튼을 클릭해 주세요.</p>
+					</div>
 
 					<div id='personal'>
 						<p id ="title"> 학생기본정보. </p>
