@@ -29,8 +29,8 @@
 }
 
 #checkBtn{
-    background-color: lightgray;
-    border: lightgray;
+    background-color: #E3E3E3;
+    border: #E3E3E3;
     color: black;
     height: 30px;
     width: 80px;
@@ -47,4 +47,32 @@
     margin-left: 15px;
     font-size: 18px;
     font-weight: bold;
+}
+
+#sugangTxt {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+    line-height: 70px;
+}
+
+#logoutBtn {
+    margin-left: 25px;
+    background-color: #E3E3E3;
+    border: #686767 1.5px solid;
+    color: black;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#logoutTxt {
+    color: indianred;
+    margin-left: 25px;
+    margin-bottom: 10px;
 }
