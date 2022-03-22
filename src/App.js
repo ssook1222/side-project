@@ -35,8 +35,6 @@ function App() {
                     <Route path="/ready/2" element={<ReadyTwo/>}></Route>
                     <Route path="/ready/3" element={<ReadyThree/>}></Route>
 
-                    <Route path="/read/IT" element={<Classes/>}></Route>
-
                     <Route path="/practice" element={<Practice />}></Route>
                     <Route path="/practice/ranking" element={<Ranking />}></Route>
                 </Route>
