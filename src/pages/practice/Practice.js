@@ -3,7 +3,6 @@ import { Button, Image, Alert } from 'react-bootstrap';
 import Navbars from '../../navbar/Navbar';
 import Footers from '../../footer/FooterMain'
 import ClassesApp from "./readApplication/ClassesApp";
-import Classes from "./readAllClass/Classes";
 import "./Practice.css"
 class Practice extends React.Component {
 	render() {
@@ -85,10 +84,7 @@ class Practice extends React.Component {
 
 					<div id='registerList'>
 						<p id ="title"> 개설과목조회. </p>
-
 						<ColoredLine color="#387EC6" />
-
-						<Classes />
 					</div>
 
 				</div>
