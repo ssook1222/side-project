@@ -2,7 +2,6 @@ import React from 'react';
 import AppTable from "./AppTable";
 import "./AppTable.css"
 import {Col, Row} from "react-bootstrap";
-import Classes from "../readAllClass/Classes";
 
 function ClassesApp() {
     return (
