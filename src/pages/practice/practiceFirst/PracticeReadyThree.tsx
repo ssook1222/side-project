@@ -37,7 +37,7 @@ class Ready extends React.Component {
                     </Col>
                     <Col>
                         <Button
-                            href="/ready/3"
+                            href="/practice"
                             style={{
                                 backgroundColor:"white", outline:"0", border:"0", width:"100%"
                             }} >

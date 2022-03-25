@@ -11,7 +11,7 @@ import InfoTuto from "./pages/infoTuto/InfoTuto";
 import ReadyOne from "./pages/practice/practiceFirst/PracticeReadyOne";
 import ReadyTwo from "./pages/practice/practiceFirst/PracticeReadyTwo";
 import ReadyThree from "./pages/practice/practiceFirst/PracticeReadyThree";
-import Classes from "./pages/practice/readAllClass/Classes";
+import Classes from "./pages/practice/readAllClass/GyoyangTable";
 import Practice from "./pages/practice/Practice";
 import Ranking from "./pages/practice/readApplication/Ranking";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,6 +34,7 @@ function App() {
                     <Route path="/ready/1" element={<ReadyOne/>}></Route>
                     <Route path="/ready/2" element={<ReadyTwo/>}></Route>
                     <Route path="/ready/3" element={<ReadyThree/>}></Route>
+                    <Route path="/test" element={<Classes/>}></Route>
 
                     <Route path="/practice" element={<Practice />}></Route>
                     <Route path="/practice/ranking" element={<Ranking />}></Route>
