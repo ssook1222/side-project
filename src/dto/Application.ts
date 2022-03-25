@@ -16,4 +16,7 @@ export interface Application {
     retake: string;
     lectureLanguage:string;
     cancel: number;
+    lecturePeople: number;
+    lectureApply: number;
+    myRank: number;
 }

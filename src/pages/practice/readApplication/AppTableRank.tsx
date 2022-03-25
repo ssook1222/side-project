@@ -28,9 +28,9 @@ const AppTableRank: React.FC = () => {
                         <Col className="contents">{table.lectureName}</Col>
                         <Col className="contents">{table.lectureNumber}</Col>
                         <Col className="contents">{table.lectureSubClass}</Col>
-                        <Col className="contents">정원 추가</Col>
-                        <Col className="contents">수강신청 인원 추가</Col>
-                        <Col className="contents">본인 순위 추가</Col>
+                        <Col className="contents">{table.lecturePeople}</Col>
+                        <Col className="contents">{table.lectureApply}</Col>
+                        <Col className="contents">{table.myRank}</Col>
                     </Row>
                 )
             }
