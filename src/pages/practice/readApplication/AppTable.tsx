@@ -3,6 +3,7 @@ import "./ClassesApp.css"
 import {Button, Col, Row} from "react-bootstrap";
 import React, {useEffect, useState} from 'react';
 import {Application} from "../../../dto/Application";
+import {useParams} from "react-router-dom";
 
 const AppTable: React.FC = () => {
 
@@ -14,8 +15,13 @@ const AppTable: React.FC = () => {
 
     const getTable = async () => {
         const res = await axios.get(`/api/tables/application`);
-        console.log(res.data);
         setTable(res.data);
+    }
+
+    const handleCancel = async(id: number) => {
+        const res = await axios.delete(`/api/tables/application?id=${id}`);
+        console.log(id);
+        alert("선택하신 과목이 수강취소되었습니다.");
     }
 
     return (
@@ -38,7 +44,10 @@ const AppTable: React.FC = () => {
                         <Col className="contents">{table.reason}</Col>
                         <Col className="contents">{table.applyDate}</Col>
                         <Col className="contents">{table.retake}</Col>
-                        <Col className="contents"><Button id={"cancelBtn"}>취소</Button></Col>
+                        <Col className="contents">
+                            <Button onClick={(e)=>handleCancel(table.id)} id={"cancelBtn"}>취소</Button>
+
+                        </Col>
                     </Row>
                 )
             }
