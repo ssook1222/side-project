@@ -3,7 +3,6 @@ import "./ClassesApp.css"
 import {Button, Col, Row} from "react-bootstrap";
 import React, {useEffect, useState} from 'react';
 import {Application} from "../../../dto/Application";
-import {useParams} from "react-router-dom";
 
 const AppTable: React.FC = () => {
 
@@ -22,6 +21,7 @@ const AppTable: React.FC = () => {
         const res = await axios.delete(`/api/tables/application?id=${id}`);
         console.log(id);
         alert("선택하신 과목이 수강취소되었습니다.");
+        window.location.reload();
     }
 
     return (
