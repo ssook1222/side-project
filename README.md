@@ -4,7 +4,7 @@
 ![main](https://user-images.githubusercontent.com/60427387/156901651-d6cc4859-6969-4a0f-99dd-5e694ed9b4b4.png)
 
 아래 링크에서 사용해 보실 수 있습니다 : )     
-→ [이동하기 🔍](http://smclass-registration.site/)
+→ [이동하기 🔍](http://ec2-54-180-95-208.ap-northeast-2.compute.amazonaws.com:3000/QnA)
 
 ----
 
